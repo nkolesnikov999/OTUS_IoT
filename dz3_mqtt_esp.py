@@ -24,7 +24,7 @@ long last = 0;
 void publishTopic() {
   long now = millis();
   if (client.isConnected() && (now - last > PUB_DELAY)) {
-    client.publish("led/single", "It's me!");cd
+    client.publish("led/single", "It's me!");
     last = now;
   }
 }
